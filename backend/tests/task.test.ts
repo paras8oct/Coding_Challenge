@@ -2,7 +2,6 @@ import request, { Response } from 'supertest';
 import app from '../src/app'; // Adjust path as needed
 
 let taskId: string = '';
-
 beforeAll(async () => {
   const res = await request(app)
     .post('/api/tasks')
